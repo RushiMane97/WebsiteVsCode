@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipLine</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+    <style>
+        /* Add additional styles here if necessary */
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="logo">ClipLine</div>
+        <div class="header-right">
+            <a href="#" id="loginBtn">Log In / Sign Up</a>
+            <a href="#" id="listBusinessBtn">List your business</a>
+            <div class="country-selector">
+                <img src="india-flag.png" alt="India Flag">
+                <span>IN</span>
+            </div>
+        </div>
+    </header>
+    <main id="mainContent">
+        <div class="search-container">
+            <h1>Discover & book beauty professionals near you</h1>
+        </div>
+
+        <!-- Login form -->
+        <div id="loginSection" class="login-container" style="display:none; margin: 20px; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+                <p>New here? <a href="#" id="showSignup">Sign up</a></p>
+            </form>
+        </div>
+
+        <!-- Business form -->
+        <div id="businessSection" class="business-container" style="display:none; margin: 20px; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+            <h2>List Your Business</h2>
+            <form id="businessForm">
+                <label for="businessName">Business Name:</label>
+                <input type="text" id="businessName" name="businessName" required>
+                
+                <label for="ownerName">Owner's Name:</label>
+                <input type="text" id="ownerName" name="ownerName" required>
+                
+                <label for="businessEmail">Business Email:</label>
+                <input type="email" id="businessEmail" name="businessEmail" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="services">Services Offered:</label>
+                <textarea id="services" name="services" rows="3" required></textarea>
+                
+                <button type="submit">Submit</button>
+                <button type="button" id="goBackBtn">Go Back</button>
+            </form>
+        </div>
+    </main>
+    <nav>
+        <ul>
+            <li><a href="#">Hair Salon</a></li>
+            <li><a href="#">Barbershop</a></li>
+            <li><a href="#">Nail Salon</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Brows & Lashes</a></li>
+            <li><a href="#">Massage</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Wellness & Day Spa</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+    <script src="script.js" defer></script> <!-- Reference to JS -->
+</body>
+</html>
